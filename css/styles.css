@@ -38,6 +38,46 @@ body {
 
 .btn:hover {
     background-color: #ebad8d;
+    transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
+/* tarjetas */
+section {
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 40px 0;
+    color: #333;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+  
+.card-title {
+    margin-bottom: 16px;
+}
+  
+.card .btn {
+    align-self: center; 
+}
+  
+.container-fluid {
+    gap: 16px;
+}
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
 
