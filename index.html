@@ -1,155 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exposena 2024</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposena 2024</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/Logosimbolo-SENA-PRINCIPAL.PNG" alt="Bootstrap" width="40" height="auto">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Proyectos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Proyecto 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 5</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 6</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 7</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 8</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 9</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyecto 10</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/Logosimbolo-SENA-PRINCIPAL.PNG" alt="Bootstrap" width="40" height="auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Proyectos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
-
-    <div class="contenido d-flex justify-content-center flex-column">
-        <h1>Expo SENA 2024</h1>
-        <a href="#pro" class="btn">Ver proyectos</a>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#snake">Proyecto 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#medica">Proyecto 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#impre">Proyecto 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cafes">Proyecto 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carro">Proyecto 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contador">Proyecto 6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#casa">Proyecto 7</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallinas">Proyecto 8</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reciclaje">Proyecto 9</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clasificador">Proyecto 10</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    <section id="pro">
-      <h1>Proyectos</h1>
+  <div class="contenido d-flex justify-content-center flex-column">
+    <h1>Expo SENA 2024</h1>
+    <a href="#proyectos" class="btn">Ver proyectos</a>
+  </div>
+
+  <section id="proyectos">
+    <h1>Proyectos</h1>
     <div class="container-fluid-1 d-flex justify-content-around mt-3 p-2">
-        <div class="card" style="width: 18rem;">
-          
-            <img src="/images/snake.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Snake Gamer</h6>
-              <a href="#" class="btn ">Ver Mas</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/medicamentos.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Dispensadora De Medicamentos</h6>
-              <a href="#" class="btn ">Ver Mas</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/impresora3d.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Impresora 3D</h6>
-              <a href="#" class="btn ">Ver Mas</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/cafe.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Empaquetadora y Celladora De Cafe</h6>
-              <a href="#" class="btn ">Ver Mas</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/botellas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Recicladora De Botellas PET</h6>
-              <a href="#" class="btn ">Ver Mas</a>
-            </div>
-          </div>
+      <div class="card" id="snake" style="width: 18rem;">
+        <img src="/images/snake.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Snake Gamer</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#snake-game">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="medica" style="width: 18rem;">
+        <img src="/images/medicamentos.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Dispensadora De Medicamentos</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#medicamentos">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="impre" style="width: 18rem;">
+        <img src="/images/impresora3d.jpeg"  class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Impresora 3D</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#impresora">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="cafes" style="width: 18rem;">
+        <img src="/images/cafe.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Empaquetadora y Celladora De Cafe</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#empaquetadora">
+            Ver mas
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="container-fluid d-flex justify-content-around mt-3">
-        <div class="card" style="width: 18rem;">
-            <img src="/images/carro.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Carro Sembrado</h6>
-              <a href="#" class="btn ">Ver Mas</a>
+    <div class="container-fluid d-flex justify-content-around mt-5">
+      <div class="card" id="carro" style="width: 18rem;">
+        <img src="/images/carro.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Carro Sembrador</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sembrador">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="contador" style="width: 18rem;">
+        <img src="/images/monedas.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Contadora y Clasificadora de Monedas</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#monedas">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="casa" style="width: 18rem;">
+        <img src="/images/casa.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Casa Inteligente</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#casa">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="gallinas" style="width: 18rem;">
+        <img src="/images/gallinas.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Dispensadora De Alimentos y Agua para Gallinas</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dispensador">
+            Ver mas
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-evenly mt-5">
+      <div class="card" id="reciclaje" style="width: 18rem;">
+        <img src="/images/botellas.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Recicladora De Botellas PET</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recicladora">
+            Ver mas
+          </button>
+        </div>
+      </div>
+      <div class="card" id="clasificador" style="width: 18rem;">
+        <img src="/images/naranjas.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Clasificador De Naranjas Por Color</h6>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#naranjas">
+            Ver mas
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modales">
+    <div class="modal fade" id="snake-game" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/snake.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/snake-.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">Snake Game:
+                Los estudiantes Jefferson y Victor del colegio departamental recrearon el juego clásico de snake Game y
+                ping
+                pong a través de una pantalla LED con un potenciómetro de un lado y un joystick del otro, todo esto
+                programado en Arduino el cual mueve las luces atraves de sensores. Este proyecto fue elaborado para que
+                como proyecto de grado.
+              </p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/monedas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Contadora y Clasificadora de Monedas</h6>
-              <a href="#" class="btn ">Ver Mas</a>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="medicamentos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample1" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/medicamentos-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/medicamentos.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Dispensador de medicamentos: Proyecto diseñado en Arduino, el cual consiste en recordar mediante una
+                alarma de voz y dispensar a los usuarios la hora de toma de los medicamentos. Mediante una aplicación se
+                controla la apertura y cierre de la gaveta donde se encuentra almacenados los medicamentos.
+              </p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/casa.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Casa Inteligente</h6>
-              <a href="#" class="btn ">Ver Mas</a>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="impresora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/impresora3d-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/impresora3d.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                3D Lab:
+                Los estudiantes Alejandro y alexis de la institución educativa barrios unidos, el proyecto es una
+                impresora 3D, es más
+                un emprendimiento por parte de los estudiantes mediante el cual fabrican marcos de fotos, llaveros,
+                muñecos, etc. Todo
+                esto como proyecto de grado de los estudiantes
+              </p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/gallinas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Dispensadora De Alimentos y Agua para Gallinas</h6>
-              <a href="#" class="btn ">Ver Mas</a>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="empaquetadora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample3" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cafe-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/cafe.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Empaquetadora de café:
+                Los estudiantes Yunda y Juan David de la institución educativa la Merced crearon una empaquetadora de café para facilitar la distribución de productos empaquetados a los campesinos. Fue creado con material reciclado, lo componen celdas de carga, zona de sellado, imanes y zona de empaquetamiento. Programado en Arduino
+              </p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/images/naranjas.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-title">Clasificador De Naranjas Por Color</h6>
-              <a href="#" class="btn ">Ver Mas</a>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sembrador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample4" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/carro-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/carro.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Carro sembrador: 
+                Este carro tiene la funcionalidad de recorrer el terreno en el cual va a sembrar la semilla, esta es expulsada por medio de una tolva aproximadamente cada 3s. Esto para facilitarle al agriculor el tener que estar sembrando semilla por semilla un cultivo.
+              </p>
             </div>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="monedas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample5" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/carro-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/carro.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Clasificadora de monedas:
+                Los estudiantes Sebastián y elkin de la institución san Lorenzo del municipio de Suaza, diseñaron y crearon un contador y clasificador de monedas programado en Arduino, el funcionamiento del contador es al ingresar una moneda está caerá por una rampa y según el tamaño se depositara en el hueco que le corresponde contando así la cantidad que ah ingresado y la cantidad de monedas a la vez
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="casa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample6" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/casa-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/casa.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Casa inteligente solar manipulada por Bluetooth:
+                Laura de la institución educativa Genaro díaz jordan
+                Creado para que los dueños de las casas controlen está por medio de su celular para mayor seguridad, este proyecto funciona por medio de un panel solar el cual le da energía al proyecto, funciona por una aplicación creada en Arduino la cual manda señales al celular del dueño indicándole el estado de su casa
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dispensador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample7" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/gallinas-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/gallinas.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Dispensador de alimentos y agua para gallinas:
+                Las estudiantes Verónica y Valentina de la institución yureidy, este proyecto se realizó con el fin de poder facilitar a los campesinos poder alimentar de forma más automatizada a las gallinas. El funcionamiento del proyecto se hizo a través de Arduino, está cuenta con sensores y motores.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="recicladora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample8" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/botellas-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/botellas.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample8"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample8"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Recicladora de botellas Pet:
+                Los estudiantes Mateo y Juan Diego de la institución educativa la merced, desarrollaron un dispositivo programado en Arduino el cual fue creado con el fin de poder reciclar, su funcionamiento es ingresar una botella por un hueco, este tiene un almacenamiento para 300 botellas. Al ingresar las botellas la máquina recompensa a la persona con chicles los cuales se ven como baja por una rampa
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="naranjas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen del proyecto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample9" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/naranjas-.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/naranjas.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample9"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample9"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+              <p class="texto-modal mt-3">
+                Clasificador de naranjas:
+                Los estudiantes Jesús, mailon, luberney, Santiago de la institución educativa Genaro Díaz Jordan desarrollaron un clasificador de naranjas por color para ayudar a los campesinos a automatizar el proceso de clasificar naranjas, y puede adaptarse a más frutas para facilitar más trabajos. Está desarrollado con Arduino y tiene componentes como sensores de color, actuadores, y una fuente de poder.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <footer class="py-5 bg-success">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">Copyright &copy; Hector Parra, Samuel Lemos 2024</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
