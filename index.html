@@ -21,41 +21,43 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <a href="#proyectos" class="pro">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Proyectos</h5>
+        </a>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#snake">Proyecto 1</a>
+              <a class="nav-link active" aria-current="page" href="#snake" data-bs-toggle="modal" data-bs-target="#snake-game">Snake-Game</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#medica">Proyecto 2</a>
+              <a class="nav-link" href="#medica" data-bs-toggle="modal" data-bs-target="#medicamentos">Dispensadora De Medicamentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#impre">Proyecto 3</a>
+              <a class="nav-link" href="#impre" data-bs-toggle="modal" data-bs-target="#impresora">Impresora 3D</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cafes">Proyecto 4</a>
+              <a class="nav-link" href="#cafes" data-bs-toggle="modal" data-bs-target="#empaquetadora">Empaquetadora y Celladora De Cafe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#carro">Proyecto 5</a>
+              <a class="nav-link" href="#carro" data-bs-toggle="modal" data-bs-target="#sembrador">Carro Sembrador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contador">Proyecto 6</a>
+              <a class="nav-link" href="#contador" data-bs-toggle="modal" data-bs-target="#monedas">Contadora y Clasificadora de Monedas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#casa">Proyecto 7</a>
+              <a class="nav-link" href="#casa" data-bs-toggle="modal" data-bs-target="#casa">Casa Inteligente</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallinas">Proyecto 8</a>
+              <a class="nav-link" href="#gallinas" data-bs-toggle="modal" data-bs-target="#dispensador">Dispensadora De Alimentos y Agua para Gallinas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#reciclaje">Proyecto 9</a>
+              <a class="nav-link" href="#reciclaje" data-bs-toggle="modal" data-bs-target="#reciclador">Recicladora De Botellas PET</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#clasificador">Proyecto 10</a>
+              <a class="nav-link" href="#clasificador" data-bs-toggle="modal" data-bs-target="#naranjas">Clasificador De Naranjas Por Color</a>
             </li>
           </ul>
         </div>
@@ -72,6 +74,7 @@
     <h1>Proyectos</h1>
     <div class="container-fluid-1 d-flex justify-content-around mt-3 p-2">
       <div class="card" id="snake" style="width: 18rem;">
+        <span class="card-number">1</span>
         <img src="/images/snake.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Snake Gamer</h6>
@@ -81,6 +84,7 @@
         </div>
       </div>
       <div class="card" id="medica" style="width: 18rem;">
+        <span class="card-number">2</span>
         <img src="/images/medicamentos.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Dispensadora De Medicamentos</h6>
@@ -90,6 +94,7 @@
         </div>
       </div>
       <div class="card" id="impre" style="width: 18rem;">
+        <span class="card-number">3</span>
         <img src="/images/impresora3d.jpeg"  class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Impresora 3D</h6>
@@ -99,6 +104,7 @@
         </div>
       </div>
       <div class="card" id="cafes" style="width: 18rem;">
+        <span class="card-number">4</span>
         <img src="/images/cafe.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Empaquetadora y Celladora De Cafe</h6>
@@ -110,6 +116,7 @@
     </div>
     <div class="container-fluid d-flex justify-content-around mt-5">
       <div class="card" id="carro" style="width: 18rem;">
+        <span class="card-number">5</span>
         <img src="/images/carro.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Carro Sembrador</h6>
@@ -119,6 +126,7 @@
         </div>
       </div>
       <div class="card" id="contador" style="width: 18rem;">
+        <span class="card-number">6</span>
         <img src="/images/monedas.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Contadora y Clasificadora de Monedas</h6>
@@ -128,6 +136,7 @@
         </div>
       </div>
       <div class="card" id="casa" style="width: 18rem;">
+        <span class="card-number">7</span>
         <img src="/images/casa.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Casa Inteligente</h6>
@@ -137,6 +146,7 @@
         </div>
       </div>
       <div class="card" id="gallinas" style="width: 18rem;">
+        <span class="card-number">8</span>
         <img src="/images/gallinas.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Dispensadora De Alimentos y Agua para Gallinas</h6>
@@ -148,6 +158,7 @@
     </div>
     <div class="container-fluid d-flex justify-content-evenly mt-5">
       <div class="card" id="reciclaje" style="width: 18rem;">
+        <span class="card-number">9</span>
         <img src="/images/botellas.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Recicladora De Botellas PET</h6>
@@ -157,6 +168,7 @@
         </div>
       </div>
       <div class="card" id="clasificador" style="width: 18rem;">
+        <span class="card-number">10</span>
         <img src="/images/naranjas.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h6 class="card-title">Clasificador De Naranjas Por Color</h6>
@@ -588,6 +600,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="/js/javascript.js"></script>
 </body>
 
 </html>
