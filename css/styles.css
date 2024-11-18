@@ -11,8 +11,7 @@ body {
 }
 
 .contenido {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/fondo-bg.jpg);
-    background-position: center bottom;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/foto-carrusel-15.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
