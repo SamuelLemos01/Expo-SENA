@@ -128,4 +128,9 @@ h1 {
     height: 20px;
 }
 
+.proyectos img {
+    width: 100%;
+    height: auto;
+
+}
 
